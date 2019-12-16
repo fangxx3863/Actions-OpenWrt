@@ -9,19 +9,12 @@
 
 name: OpenWrt (macOS)
 
-on: 
-#  public
-#  release:
-#    types: [published]
-#  push:
-  branches: 
-    - master
-#    paths:
-#      - '.config'
+on:
 #  schedule:
-#    - cron: 0 8 * * 5
-#  watch:
-#    types: [started]
+#    - cron: 0 20 * * *
+  push:
+    branches: 
+      - master
 
 jobs:
   build:
