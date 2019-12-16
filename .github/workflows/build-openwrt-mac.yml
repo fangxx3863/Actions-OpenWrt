@@ -9,12 +9,12 @@
 name: Build OpenWrt (macOS)
 
 on: 
-  public
+#  public
 #  release:
 #    types: [published]
 #  push:
-#    branches: 
-#      - master
+    branches: 
+      - master
 #    paths:
 #      - '.config'
 #  schedule:
@@ -70,8 +70,8 @@ jobs:
         ./$DIY_SH
         make defconfig
 
-#    - name: SSH connection to Actions
-#      uses: P3TERX/debugger-action@master
+    - name: SSH connection to Actions
+      uses: P3TERX/debugger-action@master
 
     - name: Download package
       run: |
