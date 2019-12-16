@@ -7,15 +7,15 @@
 #=================================================
 
 
-name: Build OpenWrt (macOS)
+name: OpenWrt (macOS)
 
 on: 
 #  public
 #  release:
 #    types: [published]
 #  push:
-    branches: 
-      - master
+  branches: 
+    - master
 #    paths:
 #      - '.config'
 #  schedule:
