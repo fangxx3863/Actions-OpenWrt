@@ -69,7 +69,7 @@ jobs:
 
     - name: Download package
       run: |
-        cd openwrt && make download -j8
+        cd openwrt && make download -j10
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
 
