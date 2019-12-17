@@ -38,10 +38,10 @@ jobs:
     - name: Clone source code
       working-directory: /Volumes/OpenWrt
       env: 
-        REPO_URL: https://github.com/openwrt/openwrt
-        REPO_BRANCH: openwrt-18.06
+        REPO_URL: https://github.com/coolsnowwolf/lede
+#        REPO_BRANCH: openwrt-18.06
       run: |
-        git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
+        git clone --depth 1 $REPO_URL openwrt
         ln -sf /Volumes/OpenWrt/openwrt $GITHUB_WORKSPACE/openwrt
         sed -i "s/grep Apple.LLVM/grep -E 'Apple.(LLVM|clang)'/g" openwrt/include/prereq-build.mk
 
